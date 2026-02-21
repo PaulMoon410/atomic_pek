@@ -1,0 +1,169 @@
+/* Super Snazzy Atomic PEK Swap UI */
+body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 430px;
+    margin: 48px auto 0 auto;
+    background: rgba(34,34,51,0.98);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    padding: 32px 28px 24px 28px;
+    position: relative;
+    border: 1.5px solid #23234d;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.1em;
+    letter-spacing: 1px;
+    color: #ffb300;
+    margin-bottom: 18px;
+    text-shadow: 0 2px 8px #000a;
+}
+
+#swapSection label {
+    display: block;
+    margin: 14px 0 6px 0;
+    font-weight: 600;
+    color: #ffb300;
+    letter-spacing: 0.5px;
+}
+
+#swapSection input[type="text"],
+#swapSection input[type="number"],
+#swapSection select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 7px;
+    border: 1.5px solid #23234d;
+    background: #23234d;
+    color: #fff;
+    font-size: 1.08em;
+    margin-bottom: 4px;
+    transition: border 0.2s;
+}
+
+#swapSection input:focus,
+#swapSection select:focus {
+    border: 1.5px solid #ffb300;
+    outline: none;
+}
+
+#swapSection select {
+    cursor: pointer;
+}
+
+#swapKeychain, .hivesigner-btn {
+    width: 48%;
+    padding: 12px 0;
+    margin: 14px 1% 0 0;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.08em;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffb300 0%, #ff6f00 100%);
+    color: #23234d;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #0005;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+.hivesigner-btn {
+    background: linear-gradient(90deg, #00c3ff 0%, #3a7bd5 100%);
+    color: #fff;
+    margin-left: 2%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#swapKeychain:hover {
+    background: linear-gradient(90deg, #ffd54f 0%, #ff9800 100%);
+    color: #1a1a2e;
+}
+
+.hivesigner-btn:hover {
+    background: linear-gradient(90deg, #3a7bd5 0%, #00c3ff 100%);
+    color: #23234d;
+}
+
+#swapResult {
+    margin-top: 18px;
+    min-height: 32px;
+    font-size: 1.08em;
+    color: #fff;
+    background: rgba(255,179,0,0.08);
+    border-radius: 7px;
+    padding: 10px 12px;
+    word-break: break-word;
+    box-shadow: 0 1px 4px #0002;
+}
+
+#rateDisplay {
+    margin: 10px 0;
+    color: #ffb300;
+    font-weight: bold;
+    font-size: 1.08em;
+    text-shadow: 0 1px 4px #000a;
+}
+
+#disclaimer {
+    background: linear-gradient(90deg, #23234d 0%, #ffb300 100%);
+    color: #23234d;
+    padding: 12px;
+    border-radius: 9px;
+    margin-bottom: 18px;
+    font-size: 1.01em;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #0002;
+}
+
+#debugLog {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: #23234d;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px 8px 0 0;
+    max-width: 38vw;
+    max-height: 28vh;
+    overflow: auto;
+    font-size: 0.97em;
+    opacity: 0.97;
+    box-shadow: 0 2px 8px #000a;
+    border: 1.5px solid #ffb300;
+    border-bottom: none;
+}
+
+#debugLog b {
+    color: #ffb300;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #23234d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffb300;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 12px 4vw 12px 4vw;
+    }
+    #debugLog {
+        max-width: 90vw;
+        font-size: 0.93em;
+    }
+}
