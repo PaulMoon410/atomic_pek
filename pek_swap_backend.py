@@ -18,8 +18,8 @@ CORS(app)
 # --- CONFIG ---
 HIVE_NODE = 'https://api.hive.blog'
 ENGINE_NODE = 'https://api.hive-engine.com/rpc'
-SWAP_ACCOUNT = 'your_swap_account'  # Set to your backend's Hive account
-SWAP_ACCOUNT_KEY = 'your_private_active_key'  # Store securely, never commit real key!
+SWAP_ACCOUNT = '<REDACTED_SWAP_ACCOUNT>'  # Set to your backend's Hive account
+SWAP_ACCOUNT_KEY = '<REDACTED_SWAP_ACCOUNT_KEY>'  # Store securely, never commit real key!
 
 # --- In-memory swap status (use DB for production) ---
 swaps = {}
